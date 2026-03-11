@@ -1,0 +1,2 @@
+﻿CONTAINER ID   IMAGE                COMMAND                  CREATED          STATUS          PORTS                    NAMES
+f85fde38f1eb   postgres:16-alpine   "docker-entrypoint.sΓÇª"   59 seconds ago   Up 58 seconds   0.0.0.0:5432->5432/tcp   clean_arch_postgres

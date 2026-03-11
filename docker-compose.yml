@@ -1,0 +1,19 @@
+# Docker Compose — spins up PostgreSQL locally (like Docker support in Visual Studio)
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: clean_arch_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: clean_architecture_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
+
